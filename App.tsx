@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
-import SignIn_Page from './lib/src/Screens/SignIn';
+import SignIn_Page from './src/Screens/SignIn';
 
 function App() {
   return (
@@ -21,4 +21,3 @@ const styles = StyleSheet.create({
 });
 
 export default App; 
-// áđá

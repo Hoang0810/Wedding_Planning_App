@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
 
 function SignIn_Page() {
     return (
@@ -35,14 +35,18 @@ function SignIn_Page() {
             <Text style={styles.orText}>Or sign in with</Text>
             <View style={styles.socialButtonsContainer}>
                 <TouchableOpacity style={styles.socialButton}>
-                    <Text style={styles.socialButtonText}>Google</Text>
+                    <Image source={require('../Assets/Images/gg_btn.png')} />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.socialButton}>
-                    <Text style={styles.socialButtonText}>Apple</Text>
+                    <Image source={require('../Assets/Images/apple_btn.png')} />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.socialButton}>
+                    <Image source={require('../Assets/Images/fb_btn.png')} />
                 </TouchableOpacity>
             </View>
-
+            <Text style={styles.signUpText}>Continute as a Guest</Text>
             <Text style={styles.signUpPrompt}>
+                
                 Don't have an account? <Text style={styles.signUpText}>Sign up</Text>
             </Text>
         </View>
@@ -51,7 +55,7 @@ function SignIn_Page() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        width: '100%',
         justifyContent: 'center',
         padding: 20,
         backgroundColor: '#fff',
@@ -59,18 +63,18 @@ const styles = StyleSheet.create({
     welcomeText: {
         fontSize: 24,
         fontWeight: 'bold',
-        textAlign: 'center',
+        textAlign: 'Start',
     },
     instructionText: {
         fontSize: 16,
-        textAlign: 'center',
+        textAlign: 'Start',
         marginBottom: 20,
     },
     input: {
         height: 50,
-        borderColor: '#ccc',
+        borderColor: '#000000',
         borderWidth: 1,
-        borderRadius: 5,
+        borderRadius: 8,
         paddingHorizontal: 10,
         marginBottom: 15,
     },
@@ -106,20 +110,19 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     socialButton: {
-        padding: 10,
         borderColor: '#ccc',
-        borderWidth: 1,
         borderRadius: 5,
     },
     socialButtonText: {
         color: '#000',
     },
     signUpPrompt: {
-        textAlign: 'center',
+        textAlign: 'start',
     },
     signUpText: {
-        color: '#000',
+        color: '#BABABA',
         fontWeight: 'bold',
+        textDecorationLine: 'underline'
     },
 });
 
