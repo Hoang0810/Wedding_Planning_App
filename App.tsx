@@ -1,10 +1,11 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import SignIn_Page from './lib/src/Screens/SignIn';
 
-function App(): React.JSX.Element {
+function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Default Screen</Text>
+      <SignIn_Page/>
     </SafeAreaView>
   );
 }
