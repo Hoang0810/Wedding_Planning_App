@@ -16,26 +16,7 @@ const Wellcome = () => {
       </View>
     </View>
   )
-
-  import { Image, StyleSheet, Text, View } from 'react-native'
-  import React from 'react'
-
-  const Wellcome = () => {
-    return (
-      <View style={styles.container}>
-        <View style={styles.lineImageLeft}>
-          <Image source={require('../Assets/Images/Line_wellcome2.jpg')} style={styles.lineImage} />
-        </View>
-        <Image source={require('../Assets/Images/Logo_wedding.png')} />
-        <Text style={styles.heading}>Wedding Planning</Text>
-        <Text style={styles.subHeading}>"Simplify your planning experience"</Text>
-        <View style={styles.lineImageRight}>
-          <Image source={require('../Assets/Images/Line_wellcome.jpg')} style={styles.lineImage} />
-        </View>
-      </View>
-    )
   }
-
   export default Wellcome
 
   const styles = StyleSheet.create({
@@ -72,30 +53,13 @@ const Wellcome = () => {
       position: 'absolute',
       top: 450,
       right: 100,
-    },
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 20
-    },
-    heading: {
-      fontSize: 40,
-      fontWeight: 'bold',
-    },
-    subHeading: {
-      fontSize: 16,
-      textAlign: 'center',
-      marginTop: 10
-    },
-    lineImageLeft: {
-      position: 'absolute',
-      bottom: 500,
-      left: 100,
+        position: 'absolute',
+        bottom: 500,
+        left: 30,
     },
     lineImageRight: {
-      position: 'absolute',
-      top: 500,
-      right: 100,
+        position: 'absolute',
+        top: 500,
+        right: 5,
     },
   });
