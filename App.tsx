@@ -1,19 +1,13 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text } from 'react-native';
 import SignIn_Page from './src/Screens/SignIn';
+import Intro from './src/Screens/Intro';
 import Wellcome from './src/Screens/Wellcome';
-import Intro1 from './src/Screens/Intro1';
-import Intro2 from './src/Screens/Intro2';
-import Intro3 from './src/Screens/Intro3';
-
-
-
 function App() {
   return (
     <SafeAreaView style={styles.container}>
       {/* <SignIn_Page/> */}
      {/* <Wellcome/> */}
-     <Intro3/>
     </SafeAreaView>
   );
 }
